@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* These elements are used in header tag' */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    cursor: pointer;
+}
+
+.name p {
+    margin: 0px;
+    padding: 40px 10px;
+    color: grey;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav {
+    margin: 0px;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav ul {
+    justify-content: space-between;
+    display: flex;
+}
+
+.nav ul li {
+    list-style: none;
+    margin-left: 15px;
+    color: rgb(255, 255, 255);
+}
+
+.nav ul li:hover {
+    text-decoration: underline;
+    color: grey;
+}
+
+.in {
+    padding: 40px;
+}
+
+.in button {
+    width: 70px;
+    height: 30px;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #fff;
+    background-color: grey;
+}
+
+/* These tags are used in main tag. */
+
+.main {
+    height: 500px;
+    background-size: cover;
+    background-image: url(wet-monstera-deliciosa-plant-leaves-garden_53876-139814.avif);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main h1 {
+    margin-bottom: 15px;
+    font-size: 50px;
+}
+
+.main q {
+    font: 20px;
+}
+
+/* These elements are for the box tag. */
+
+.box-main {
+    margin: 50px auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    margin: auto;
+    padding: 40px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px #00000068;
+    border: 1px solid #fff;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.box i {
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px #000;
+    font-size: 50px;
+    color: white;
+}
+
+.box i:hover {
+    font-size: 60px;
+}
+
+/* these tags are used for the signup page */
+
+.main1 {
+    margin: 0;
+    padding: 20px;
+    background-image: url(wet-monstera-deliciosa-plant-leaves-garden_53876-139814.avif);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    margin: 40px;
+    padding: 40px;
+    width: auto;
+    color: white;
+    background: none;
+    border: 2px solid #ffffff9f;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    padding: 10px;
+    display: flex;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+        
+}
+.input label{
+    transition: all .3s ease;
+    margin-bottom: 5px;
+}
+.input:hover label{
+    padding-left: 5px;
+    border-left: 3px solid #fff;
+}
+.input input,
+.input select{
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    background-color: #ffffff9f;
+}
+.main1 .button{
+    padding: 20px 30px;
+    flex-direction: row;
+    justify-content: center;
+}
+.main1 .button button{
+    margin: 2px;
+    padding: 3px;
+    width: 70px;
+    height: 30px;
+    background-color: #ffffff9f;
+    border: black;
+    border-radius: 7px;
+    box-shadow: 0 0 10px grey;
+}
+
+
+/* these elements are for the footer. */
+
+.footer {
+    color: grey;
+    background-color: black;
+    text-align: center;
+}
+
+/* .footer>.icon{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+} */
+
+@media (max-width:400px) {
+
+    .name,
+    .nav,
+    .in {
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width:612px) {
+
+    .name,
+    .nav,
+    .in {
+        margin: 10px;
+        padding: 10px;
+    }
+
+}
+
+@media (max-width:1100px) {
+    .box-main {
+        justify-content: center;
+    }
+
+    .box {
+        margin: 20px;
+    }
+}
